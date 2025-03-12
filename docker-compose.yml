@@ -7,7 +7,7 @@ services:
     ports:
       - "8081:8081"
     depends_on:
-      - devskill-apic
+      - devskill-api
       - postgres
 
   devskill-api:
