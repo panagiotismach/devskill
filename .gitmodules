@@ -1,0 +1,6 @@
+[submodule "devSkill-ui"]
+	path = devSkill-ui
+	url = https://github.com/panagiotismach/devSkill-ui.git
+[submodule "devskill-api"]
+	path = devskill-api
+	url = https://github.com/panagiotismach/devskill-api.git
