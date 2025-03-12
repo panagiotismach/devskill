@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  devskill-ui:
+    build:
+      context: ./devSkill-ui
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    depends_on:
+      - devskill
+      - postgres
+
+  devskill-api:
+    build:
+      context: ./devskill-api
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    env_file:
+      - .env  # Load environment variables from the .env file
+
+  postgres:
+    image: postgres:latest
+    container_name: devskill-postgres
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
