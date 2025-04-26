@@ -1,4 +1,4 @@
-# DevSkill Platform
+# DevSkill App
 
 Fullstack application made of:
 - **Backend**: Java Spring Boot ([`devskill-api`](https://github.com/panagiotismach/devskill-api))
