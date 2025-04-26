@@ -1,3 +1,4 @@
+
 # DevSkill App
 
 Fullstack application made of:
@@ -63,6 +64,26 @@ Or run in detached mode:
 
 ```bash
 docker compose up -d
+```
+
+---
+
+## API Setup (Database Population)
+
+After starting the Docker containers, **call the following API endpoints** to populate the database:
+
+- **`GET /syncRepositories`** – Sync the repositories.
+- **`GET /syncTrendingRepositories`** – Sync trending repositories.
+- **`GET /aggregate-extensions`** – Aggregate extensions data.
+
+These API calls will populate the database with the required data.
+
+You can make the requests using **Postman** or any API client, or even **curl**. Example using `curl`:
+
+```bash
+curl -X GET http://localhost:8080/syncRepositories
+curl -X GET http://localhost:8080/syncTrendingRepositories
+curl -X GET http://localhost:8080/aggregate-extensions
 ```
 
 ---
