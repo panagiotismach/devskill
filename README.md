@@ -6,6 +6,7 @@ Fullstack application made of:
 - **Frontend**: Vue.js ([`devSkill-ui`](https://github.com/panagiotismach/devSkill-ui))
 - **Database**: PostgreSQL
 - **Deployment**: Docker
+- **Mapping Of Languages**: Github linguist
 
 ---
 
