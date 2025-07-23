@@ -164,3 +164,22 @@ docker compose up --build
 ```
 
 Then open [http://localhost:8081](http://localhost:8081) 🚀
+
+## Screenshots
+
+Below are key screenshots of the DevSkill ui:
+
+- **Contributors Page**: The UI running at `http://localhost:8081/contributors`.  
+
+  ![Contributors Page](images/contributors.png)
+
+- **Repositories Page**: The UI running at `http://localhost:8081/repositories`.  
+
+  ![Repositories Page](images/repositories.png)
+- **Trending Repositories Page**: The UI running at `http://localhost:8081/trending`.  
+
+  ![Trending Repositories Page](images/trending_repositories.png)
+
+- **File Extensions Page**: The UI running at `http://localhost:8081/extensions`.  
+
+  ![File Extensions Page](images/extensions.png)
